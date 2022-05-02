@@ -4,7 +4,7 @@ import BackendFactory from './BackendFactory';
 import {eachSeries as asyncEachSeries} from 'async';
 import BFSEmscriptenFS from '../../src/generic/emscripten_fs';
 import assert from './wrapped-assert';
-import loadFixtures from '../fixtures/load_fixtures';
+// import loadFixtures from '../fixtures/load_fixtures';
 
 declare var __numWaiting: number;
 declare var __karma__: any;
@@ -108,7 +108,7 @@ export default function(tests: {
       it(`[Emscripten] Initialize FileSystem`, (done) => {
         BrowserFS.configure({ fs: 'InMemory' }, done);
       });
-      generateTest(`[Emscripten] Load fixtures (${testName})`, loadFixtures);
+      // generateTest(`[Emscripten] Load fixtures (${testName})`, loadFixtures);
       it(`[Emscripten] ${testName}`, function(done: (e?: any) => void) {
         let stdout = "";
         let stderr = "";
@@ -172,7 +172,7 @@ export default function(tests: {
       __numWaiting = 0;
       BrowserFS.initialize(backend);
     });
-    generateTest("Load fixtures", loadFixtures);
+    // generateTest("Load fixtures", loadFixtures);
     if (tests.fs.hasOwnProperty(name)) {
       // Generate each unit test specific to this backend.
       for (testName in tests.fs[name]) {

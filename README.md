@@ -10,6 +10,7 @@
 BrowserFS is highly extensible, and ships with many filesystem backends:
 
 * `HTTPRequest`: Downloads files on-demand from a webserver via `XMLHttpRequest` or `fetch`.
+* `S3FS`: Mount files from S3FS;
 * `LocalStorage`: Stores files in the browser's `localStorage`.
 * `HTML5FS`: Stores files into the HTML5 `FileSystem` API.
 * `IndexedDB`: Stores files into the browser's `IndexedDB` object database.

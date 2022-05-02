@@ -223,6 +223,13 @@ Note that any asynchronous file system can be accessed synchronously using the [
     <td>✗</td>
     <td>✗</td>
   </tr>
+    <tr>
+    <td><a href="classes/_backend_fsspec_.S3FS.html">S3FS</a></td>
+    <td>✗</td>
+    <td>✓</td>
+    <td>✗</td>
+    <td>✗</td>
+  </tr>
   <tr>
     <td><a href="classes/_backend_workerfs_.workerfs.html">WorkerFS</a></td>
     <td>?</td>
